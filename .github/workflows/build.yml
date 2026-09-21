@@ -4,7 +4,7 @@ name: Build C++
 on:
   push:
     branhces: "**"
-  pull_requests:
+  pull_request:
     branches: [ main ]
   workflow_dispatch:
 
