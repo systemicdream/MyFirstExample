@@ -16,10 +16,10 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y -f build-essential gpp cmake
-build:
-  needs: install
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v7
-    - name: Build project
-      run: g++ -std=c++17 main.cpp
+ build:
+   needs: install
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v7
+     - name: Build project
+       run: g++ -std=c++17 main.cpp
